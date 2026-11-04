@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pobierz – CarRide-single.html</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #04070a; --green: #2dffa0; --cyan: #3fd8ff; --text: #d9f5e8;
+    --muted: #6f9a89; --line: rgba(120,255,190,0.18); --panel: rgba(14,24,22,0.72);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    min-height:100dvh; background:var(--bg); color:var(--text);
+    font-family:'Space Grotesk',system-ui,sans-serif;
+    display:flex; align-items:center; justify-content:center; padding:24px;
+    background-image:
+      radial-gradient(700px 400px at 80% -10%, rgba(45,255,160,0.14), transparent 55%),
+      radial-gradient(500px 350px at 10% 90%, rgba(63,216,255,0.10), transparent 55%);
+  }
+  .card {
+    width:100%; max-width:420px; background:var(--panel);
+    border:1px solid var(--line); border-radius:22px; padding:32px 28px;
+    backdrop-filter:blur(16px); box-shadow:0 20px 50px rgba(0,0,0,.5);
+    text-align:center;
+  }
+  .logo {
+    width:56px; height:56px; margin:0 auto 18px; border-radius:16px;
+    background:linear-gradient(135deg,var(--green),var(--cyan));
+    display:grid; place-items:center; font-size:26px;
+    box-shadow:0 0 28px rgba(45,255,160,.35);
+  }
+  h1 { font-size:22px; font-weight:700; margin-bottom:6px; letter-spacing:-.3px; }
+  .sub { font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted); margin-bottom:22px; }
+  .file-box {
+    background:rgba(0,0,0,.35); border:1px solid var(--line); border-radius:14px;
+    padding:16px; margin-bottom:22px; text-align:left;
+  }
+  .file-box .name { font-weight:600; font-size:15px; word-break:break-all; }
+  .file-box .meta { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); margin-top:6px; }
+  .btn {
+    display:block; width:100%; padding:15px 18px; border:none; border-radius:14px;
+    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px;
+    color:#03150c; cursor:pointer; text-decoration:none;
+    background:linear-gradient(135deg,var(--green),#19d4b0);
+    box-shadow:0 8px 24px rgba(45,255,160,.25); transition:transform .12s, filter .15s;
+  }
+  .btn:active { transform:scale(.97); filter:brightness(.92); }
+  .hint { margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">📦</div>
+    <h1>Plik gotowy</h1>
+    <div class="sub">// download ready</div>
+    <div class="file-box">
+      <div class="name">CarRide-single.html</div>
+      <div class="meta">CarRide-single.zip · 15.4 KB</div>
+    </div>
+    <a class="btn" href="./CarRide-single.zip" download="CarRide-single.zip">⬇ Pobierz plik</a>
+    <div class="hint">Hacker Terminal · GitHub Pages</div>
+  </div>
+</body>
+</html>
